@@ -1,0 +1,20 @@
+fun main() {
+    val a = readln().toInt()
+    val b = readln().toInt()
+    val c = readln().toInt()
+
+    if ((a > b) and (b > c))
+        println(b)
+    else if ((b > a) and (a > c))
+        println(a)
+    else if ((b > c) and (c > a))
+        println(c)
+    else if ((a < b) and (b < c))
+        println(b)
+    else if ((b < c) and (c < a))
+        println(c)
+    else if ((b < a) and (a < c))
+        println(a)
+    else ((a == b) or (a == c) or (c == b))
+        println("Ошибка")
+}
